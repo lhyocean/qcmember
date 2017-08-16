@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <View  android:layout_width="match_parent"
+           android:layout_height="0.5dp"
+           android:background="#ececec"
+        />
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_tinted_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:layout_gravity="center"
+        android:textColor="@color/text_deep_black"
+        android:ellipsize="marquee"
+        android:paddingLeft="@dimen/dimen_48"
+        android:paddingTop="@dimen/dimen_24"
+        android:paddingBottom="@dimen/dimen_24"
+        android:singleLine="true"
+        android:textSize="15sp"/>
+</LinearLayout>
+
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/bg_flow"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/head_title"/>
+    <RelativeLayout
+        android:id="@+id/rl_switch_notification"
+        android:paddingRight="@dimen/dimen_30"
+        android:paddingLeft="@dimen/dimen_30"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:textSize="@dimen/text_26"
+            android:textColor="@color/color_656565"
+            android:text="接收消息通知"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.beijing.qchealth.qchealth_vip.view.EaseSwitchButton
+            android:id="@+id/switch_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:layout_height="@dimen/dimen_1"/>
+    <include layout="@layout/line_view"/>
+    <RelativeLayout
+        android:id="@+id/rl_switch_sound"
+        android:paddingRight="@dimen/dimen_30"
+        android:paddingLeft="@dimen/dimen_30"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:textSize="@dimen/text_26"
+            android:textColor="@color/color_656565"
+            android:text="声音"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.beijing.qchealth.qchealth_vip.view.EaseSwitchButton
+            android:id="@+id/switch_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+    <include layout="@layout/line_view"/>
+    <RelativeLayout
+        android:id="@+id/rl_switch_vibrate"
+        android:paddingRight="@dimen/dimen_30"
+        android:paddingLeft="@dimen/dimen_30"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:textSize="@dimen/text_26"
+            android:textColor="@color/color_656565"
+            android:text="震动"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.beijing.qchealth.qchealth_vip.view.EaseSwitchButton
+            android:id="@+id/switch_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+    <include layout="@layout/line_view"/>
+</LinearLayout>

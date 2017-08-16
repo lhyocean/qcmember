@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#fff"
+    android:clipToPadding="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+           
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            >
+
+        </FrameLayout>
+        <View
+            android:id="@+id/view_line_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/line_gray"
+            ></View>
+        <LinearLayout
+            
+            android:id="@+id/rl_tab_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_98"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:id="@+id/btn_container_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/btn_home_tab"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/beauty_tab_home_bg"
+                    android:drawablePadding="@dimen/dimen_8"
+                    android:scaleType="matrix"
+                    android:text="首页"
+                    android:textColor="@color/yuwen_main_button_text_color"
+                    android:textSize="@dimen/text_22"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/btn_container_share"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/btn_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/beauty_tab_share_bg"
+                    android:drawablePadding="@dimen/dimen_8"
+                    android:scaleType="matrix"
+                    android:text="云医院"
+                    android:textColor="@color/yuwen_main_button_text_color"
+                    android:textSize="@dimen/text_22"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_container_mess"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/btn_mess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/beauty_tab_mess_bg"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/dimen_8"
+                    android:scaleType="matrix"
+                    android:text="食药房"
+                    android:textColor="@color/yuwen_main_button_text_color"
+                    android:textSize="@dimen/text_22"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/btn_discover"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/beauty_tab_discovery_bg"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/dimen_8"
+                    android:scaleType="matrix"
+                    android:text="发现"
+                    android:textColor="@color/yuwen_main_button_text_color"
+                    android:textSize="@dimen/text_22"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:id="@+id/btn_container_conversation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btn_profile"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/beauty_tab_profile_bg"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/dimen_8"
+                android:scaleType="matrix"
+                android:text="我"
+                android:textColor="@color/yuwen_main_button_text_color"
+                android:textSize="@dimen/text_22"
+                />
+
+
+        </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

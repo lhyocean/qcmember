@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_white"
+        android:layout_width="@dimen/dimen_570"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout
+            android:id="@+id/rl_close"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_60">
+            <ImageView
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:src="@drawable/close_dialog"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/tv_top"
+            android:text="请按照图形输入字母数字"
+            android:textColor="@color/color_00ba6b"
+            android:textSize="@dimen/text_28"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_40"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/ll_img"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_top"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_36"
+            android:paddingRight="@dimen/dimen_36"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <LinearLayout
+                android:padding="@dimen/dimen_1"
+                android:gravity="center"
+                android:background="@drawable/cir_img_verify"
+                android:layout_width="@dimen/dimen_230"
+                android:layout_height="@dimen/dimen_80">
+                
+                <EditText
+                    android:id="@+id/edit_img_code"
+                    android:textCursorDrawable="@drawable/edit_selection_color"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:background="@color/transparent"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:gravity="center"
+                    android:hint="请输入"
+                    android:textColor="@color/color_293535"
+                    android:textColorHint="@color/color_c1c4c5"
+                    android:layout_width="@dimen/dimen_140"
+                    android:layout_height="match_parent" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:background="@drawable/bg_e5e2e5"
+                android:layout_marginLeft="@dimen/dimen_18"
+                android:padding="@dimen/dimen_2"
+                android:layout_width="@dimen/dimen_230"
+                android:layout_height="@dimen/dimen_80">
+                
+                <ImageView
+                    android:id="@+id/img_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="@dimen/dimen_50"
+            android:paddingBottom="@dimen/dimen_40"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ll_img"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_36"
+            android:paddingRight="@dimen/dimen_36"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:id="@+id/tv_sure"
+                android:text="提交"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_30"
+                android:background="@drawable/login_bg_correct"
+                android:layout_width="@dimen/dimen_482"
+                android:layout_height="@dimen/dimen_70" />
+            
+            
+        </LinearLayout>
+        
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

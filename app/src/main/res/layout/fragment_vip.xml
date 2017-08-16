@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@color/bg_flow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@drawable/vip_top_bg"
+        android:orientation="horizontal"
+        
+        android:paddingLeft="@dimen/dimen_30"
+       
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_88">
+        
+        <LinearLayout
+            android:layout_marginRight="@dimen/dimen_30"
+            android:id="@+id/ll_search"
+            android:background="@drawable/search_bg_white"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dimen_52">
+            
+            <ImageView
+                 android:src="@drawable/search_grey"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+            <EditText
+                android:background="@color/white"
+                android:layout_marginLeft="@dimen/dimen_12"
+                android:textSize="@dimen/text_26"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_c1c4c5"
+                android:textColorHint="@color/color_c1c4c5"
+                android:hint="请输入姓名或备注"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            
+        </LinearLayout>
+
+        
+        <RelativeLayout
+            android:id="@+id/rl_mess"
+            android:paddingRight="@dimen/dimen_30"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/dimen_40"
+                android:layout_height="@dimen/dimen_40"
+                >
+                <ImageView
+                    android:id="@+id/img_mess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/main_message" />
+
+                <TextView
+                    android:id="@+id/img_hint"
+                    android:layout_width="@dimen/dimen_10"
+                    android:layout_height="@dimen/dimen_10"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/red_ovel" />
+
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:padding="@dimen/dimen_30"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            
+            android:src="@drawable/group_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/add_address_tv_left" 
+            android:text="分组管理"
+            />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                
+                android:text="5个分组"
+                android:layout_marginRight="@dimen/dimen_30"
+                android:textColor="@color/color_989898"
+                android:textSize="@dimen/text_26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@drawable/arrow_left_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    <include layout="@layout/line_view"/>
+    
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+    
+
+</LinearLayout>

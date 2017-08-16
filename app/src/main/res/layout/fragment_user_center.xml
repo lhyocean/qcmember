@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_88"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            android:paddingLeft="@dimen/dimen_30"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_mess"
+            android:paddingRight="@dimen/dimen_30"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="@dimen/dimen_40"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/img_mess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_message" />
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/img_hint"
+                    android:layout_width="@dimen/dimen_10"
+                    android:layout_height="@dimen/dimen_10"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/red_ovel" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <include layout="@layout/line_view"/>
+    
+    <ScrollView
+        android:background="@color/bg_flow"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/dimen_60"
+                android:paddingRight="@dimen/dimen_60"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    
+                    android:layout_marginTop="@dimen/dimen_100"
+                    android:id="@+id/user_name"
+                    android:textColor="@color/color_293535"
+                    android:textSize="@dimen/text_48"
+                    android:text="泡芙女士"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_below="@+id/user_name"
+                    android:id="@+id/user_account"
+                    android:text="账户：455555"
+                    android:textSize="@dimen/text_30"
+                    android:textColor="@color/color_d2d2d2"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                
+                <LinearLayout
+                    android:layout_below="@+id/user_account"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_100"
+                    android:layout_marginBottom="@dimen/dimen_74"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="800"
+                            android:textSize="@dimen/text_36"
+                            android:textColor="@color/color_00ba6b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="饮食"
+                            android:textSize="@dimen/text_30"
+                            android:textColor="@color/color_d2d2d2"
+                            android:layout_marginTop="@dimen/dimen_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/dimen_160"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="650"
+                            android:textSize="@dimen/text_36"
+                            android:textColor="@color/color_00ba6b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="运动"
+                            android:textSize="@dimen/text_30"
+                            android:textColor="@color/color_d2d2d2"
+                            android:layout_marginTop="@dimen/dimen_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    
+                </LinearLayout>
+
+                <com.beijing.qchealth.qchealth_vip.view.CircleImageView
+                    android:id="@+id/user_avatar"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user_head_zhanwei"
+                    android:layout_marginTop="@dimen/dimen_50"
+                    android:layout_width="@dimen/dimen_186"
+                    android:layout_height="@dimen/dimen_186" />
+
+            </RelativeLayout>
+            <View
+                android:background="@color/line_gray"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/dimen_16"
+                android:layout_height="@dimen/dimen_1"/>
+            <include layout="@layout/line_view"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_consult"
+                    style="@style/user_info_ll">
+
+                    <TextView
+                        style="@style/user_info_left_tv_style"
+                        android:text="我的咨询" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_30"
+                        android:text="11"
+                        android:textColor="@color/color_00ba6b"
+                        android:textSize="@dimen/text_30" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_left_grey" />
+
+                </LinearLayout>
+
+                <include layout="@layout/line_view"/>
+                <LinearLayout
+                    android:id="@+id/ll_count"
+                    style="@style/user_info_ll"
+                    >
+                    <TextView
+                        android:text="我的家医"
+                        style="@style/user_info_left_tv_style" />
+                    <ImageView
+                        android:src="@drawable/arrow_left_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <View
+                    style="@style/user_line"
+                    />
+                <LinearLayout
+                    android:id="@+id/ll_service_record"
+                    style="@style/user_info_ll"
+                    >
+                    <TextView
+                        android:text="签约订单"
+                        style="@style/user_info_left_tv_style" />
+                    <ImageView
+                        android:src="@drawable/arrow_left_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <View
+                    style="@style/user_line"
+                    />
+                <LinearLayout
+                    android:id="@+id/ll_patient_evaluate"
+                    style="@style/user_info_ll"
+                    >
+                    <TextView
+                        android:text="食药房订单"
+                        style="@style/user_info_left_tv_style" />
+                    <ImageView
+                        android:src="@drawable/arrow_left_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <include layout="@layout/line_view"/>
+                <View
+                    android:background="@color/bg_flow"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_16"/>
+                <include layout="@layout/line_view"/>
+                <LinearLayout
+                    android:id="@+id/ll_app_share"
+                    style="@style/user_info_ll"
+                    >
+                    <TextView
+                        android:text="应用分享"
+                        style="@style/user_info_left_tv_style" />
+                    <ImageView
+                        android:src="@drawable/arrow_left_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <View
+                    style="@style/user_line"
+                    />
+                <LinearLayout
+                    android:id="@+id/ll_online_service"
+                    style="@style/user_info_ll"
+                    >
+                    <TextView
+                        android:text="在线客服"
+                        style="@style/user_info_left_tv_style" />
+                    <ImageView
+                        android:src="@drawable/arrow_left_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <View
+                    style="@style/user_line"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_suggest_back"
+                    style="@style/user_info_ll">
+
+                    <TextView
+                        style="@style/user_info_left_tv_style"
+                        android:text="意见反馈" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_30"
+                        android:text="11"
+                        android:textColor="@color/color_1659e7"
+                        android:textSize="@dimen/text_30" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_left_grey" />
+
+                </LinearLayout>
+
+                <include layout="@layout/line_view"/>
+
+            </LinearLayout>
+            
+            
+            
+        </LinearLayout>
+        
+    </ScrollView>
+    
+  
+    
+
+
+</LinearLayout>
